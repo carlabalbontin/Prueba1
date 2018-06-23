@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Prueba1</string>
+    <string name="welcome_text">Bienvenido!</string>
+    <string name="form_field1">Nombre</string>
+    <string name="form_field2">Número de perritos</string>
+    <string name="form_button">Enviar</string>
+    <string name="result_text">Resultados</string>
+</resources>
