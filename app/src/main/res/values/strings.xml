@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">Prueba1</string>
-    <string name="welcome_text">Bienvenido!</string>
+    <string name="welcome_text">Bienvenid@!</string>
     <string name="form_field1">Nombre</string>
     <string name="form_field2">Número de perritos</string>
     <string name="form_button">Enviar</string>
-    <string name="result_text">Resultados</string>
+
+    <!-- Resultados Screen -->
+    <string name="resultados_bajada">Ahora eres parte del universo más cute del mundo.</string>
+    <string name="subscribe_button">Quiero recibir los correos más cute</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="confirm_subscription">Suscribirme</string>
+
 </resources>
