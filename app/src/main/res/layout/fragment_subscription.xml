@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="80dp"
     tools:context=".SubscriptionFragment"
-    android:paddingTop="10dp">
+    android:paddingTop="10dp"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/subscribeButton"
@@ -16,23 +17,30 @@
         android:textAlignment="center"
         android:textColor="@android:color/white" />
 
-    <EditText
+    <android.support.design.widget.TextInputLayout
         android:id="@+id/emailField"
-        android:inputType="textEmailAddress"
-        android:hint="Correo Electronico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="invisible"/>
+        android:visibility="gone"
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:inputType="textEmailAddress"
+            android:hint="@string/correo_electronico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/confirmButton"
-        android:text="Confirmar"
+        android:text="@string/confirm_subscription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:background="@drawable/button_primary"
         android:textColor="@android:color/white"
-        android:layout_marginTop="60dp"/>
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/thankYouText"
@@ -48,4 +56,4 @@
         android:visibility="gone"
         android:paddingTop="10dp"/>
 
-</FrameLayout>
+</LinearLayout>

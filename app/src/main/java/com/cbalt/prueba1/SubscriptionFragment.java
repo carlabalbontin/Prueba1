@@ -3,6 +3,8 @@ package com.cbalt.prueba1;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TextInputEditText;
+import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,7 +37,7 @@ public class SubscriptionFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         final Button subscribeBtn = view.findViewById(R.id.subscribeButton);
-        final EditText emailField = view.findViewById(R.id.emailField);
+        final TextInputLayout emailField = view.findViewById(R.id.emailField);
         final Button confirmBtn = view.findViewById(R.id.confirmButton);
         final TextView thankYouText = view.findViewById(R.id.thankYouText);
 
