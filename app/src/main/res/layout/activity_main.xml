@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,16 +9,19 @@
     android:paddingRight="16dp">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/welcome_text"
         style="@style/TitleText"
         android:layout_marginTop="20dp"/>
 
     <TextView
+        android:id="@+id/home_bajada"
         android:text="Para comenzar necesitamos que contestes unas preguntas."
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_text"/>
 
     <EditText
         android:id="@+id/nombrePersona"
@@ -27,31 +30,39 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/form_field1"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/home_bajada"/>
 
 
     <TextView
+        android:id="@+id/switch_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="¿Te gustan los perritos?"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_below="@+id/nombrePersona"/>
 
     <Switch
         android:id="@+id/switchButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombrePersona"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:paddingRight="16dp"/>
 
     <Button
         android:id="@+id/formButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/form_button"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textColor="@android:color/white"
         android:visibility="gone"
-        android:background="@drawable/button_primary"/>
+        android:background="@drawable/button_primary"
+        android:layout_below="@+id/switch_question"/>
 
-</LinearLayout>
+</RelativeLayout>

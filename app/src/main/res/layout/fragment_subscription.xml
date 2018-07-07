@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="100dp"
-    tools:context=".SubscriptionFragment">
+    tools:context=".SubscriptionFragment"
+    android:paddingTop="10dp">
 
     <Button
         android:id="@+id/subscribeButton"
@@ -17,6 +18,7 @@
 
     <EditText
         android:id="@+id/emailField"
+        android:inputType="textEmailAddress"
         android:hint="Correo Electronico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,9 +36,16 @@
 
     <TextView
         android:id="@+id/thankYouText"
-        android:text="Gracias por suscribirte!"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"/>
+        android:drawableLeft="@mipmap/check_secondarycolor"
+        android:gravity="center_horizontal"
+        android:text="  Gracias por suscribirte!"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:paddingTop="10dp"/>
 
 </FrameLayout>

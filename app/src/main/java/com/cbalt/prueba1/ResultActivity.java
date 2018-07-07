@@ -15,10 +15,11 @@ public class ResultActivity extends AppCompatActivity {
 
         TextView resultsTitle = findViewById(R.id.resultsTitle);
         Intent intent = getIntent();
-        String resultText = "Muy bien!";
+        String resultText;
 
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         if(TextUtils.isEmpty(message)){
+            resultText = "Muy bien!";
         } else {
             String messageCap = message.substring(0, 1).toUpperCase() + message.substring(1);
             resultText = "Muy bien " + messageCap + "!";
