@@ -2,7 +2,7 @@
     <string name="app_name">Prueba1</string>
     <string name="welcome_text">Bienvenid@!</string>
     <string name="form_field1">Nombre</string>
-    <string name="form_field2">Número de perritos</string>
+    <string name="form_field2">¿Te gustan los perritos?</string>
     <string name="form_button">Enviar</string>
 
     <!-- Resultados Screen -->
